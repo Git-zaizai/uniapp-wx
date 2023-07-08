@@ -1,0 +1,74 @@
+.entr-text {
+	background-color: #ffffff;
+	border-top: 1rpx solid #f4f4f4;
+
+	.entr-user {
+		@include dif-alc;
+		color: #959595;
+		padding: 20rpx;
+
+		.t-icon-wode1 {
+			width: 65rpx;
+			height: 65rpx;
+			box-shadow: 0 0 8rpx #b3b3b3;
+			border-radius: 50%;
+		}
+
+		.eu-name-date {
+			@include dif-fdc;
+			margin-left: 25rpx;
+		}
+
+		text:last-child {
+			font-size: 18rpx;
+		}
+	}
+
+	.entr-uesr_text {
+		@include dif-fdc;
+		padding: 0 20rpx;
+
+		.enut-title {
+			font-size: 31rpx;
+			color: #797979;
+		}
+
+		.enut-text {
+			line-height: 84rpx;
+			color: #959595;
+		}
+	}
+}
+
+.entr-number {
+	padding: 10rpx 20rpx 30rpx 10rpx;
+	@include dif-juspb-alic;
+	color: #959595;
+
+	.inter-icon_coloc {
+		color: #6b6b6b;
+	}
+
+	.en-icon_mark {
+		color: #6a9c28;
+		font-size: 28rpx;
+		margin-right: 10rpx;
+	}
+}
+
+.entr-img {
+	@include dif-juspb-alic;
+	flex-wrap: wrap;
+	margin: 30rpx 0;
+
+	.entr-item-img {
+		width: 226rpx;
+		height: 226rpx;
+		border-radius: 15rpx;
+		margin: 7rpx;
+	}
+}
+
+.enut-text-overfw {
+	@include text-overflow-line(5);
+}

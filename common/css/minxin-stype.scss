@@ -1,0 +1,134 @@
+// 变量
+$textColor: #2c3e50;
+$opacit-y: 1;
+$git-text-coloc: #888;
+
+/** 混入样式 **/
+@mixin dif-jucc-alc {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin dif-alc {
+	display: flex;
+	align-items: center;
+}
+
+@mixin dif-juspb-alic {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+@mixin text-fons-color {
+	font-size: 1.2rem;
+	font-weight: 700;
+	color: $textColor;
+}
+
+@mixin dif-juc {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+@mixin dif-fdc-aic {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@mixin dif-fdc {
+	display: flex;
+	flex-direction: column;
+}
+
+@mixin dif-fdc-juc-alc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin dif-juspey-alc {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+/*
+scroll样式
+*/
+@mixin scrollbar {
+	width: 7px;
+	height: 100%;
+	background-color: rgb(238, 238, 238);
+	border-radius: 10px;
+}
+
+@mixin scrollbar-track {
+	border-radius: 10px;
+}
+
+@mixin scrollbar-thumb {
+	border-radius: 10px;
+	box-shadow: inset 0 0 0px rgba(240, 240, 240, 0.5);
+	background-color: rgba(184, 184, 184, 0.5);
+}
+
+@mixin scroll-scss {
+	overflow-y: scroll;
+	box-sizing: border-box;
+}
+/*
+scroll样式
+*/
+
+/* 单行文本溢出隐藏 省略号代替 */
+@mixin text-d {
+	display: block;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+// div公共样式
+@mixin div-f-p {
+	background: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+@mixin text-overflow-line($i) {
+	overflow: hidden;
+	word-break: break-all; /* break-all(允许在单词内换行。) */
+	text-overflow: ellipsis; /* 超出部分省略号 */
+	display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+	-webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+	-webkit-line-clamp: $i; /** 显示的行数 **/
+}
+
+@mixin border-top_lr($number) {
+	border-top-left-radius: $number;
+	border-top-right-radius: $number;
+}
+
+/* .un-text:before{
+		content: ' ';
+		height: 30rpx;
+		width: 5rpx;
+		background: #c8c8c8;
+		position: absolute;
+		left: -65rpx;
+		top: 5rpx;
+	}
+	.un-text:after{
+		content: ' ';
+		height: 30rpx;
+		width: 5rpx;
+		background: #c8c8c8;
+		position: absolute;
+		right: -65rpx;
+		top: 5rpx;
+	} */

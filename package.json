@@ -1,0 +1,19 @@
+{
+	"name": "崽崽",
+	"version": "1.0.0",
+	"uni-app": {
+		"scripts": {
+			"test-weixin": {
+				"title": "小程序测试环境",
+				"BROWSER": "",
+				"env": {
+					"UNI_PLATFORM": "mp-weixin",
+					"API_HOST": "http://localhost:4398"
+				},
+				"define": {
+					"TEST-WEIXIN": true
+				}
+			}
+		}
+	}
+}
